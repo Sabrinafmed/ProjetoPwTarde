@@ -17,7 +17,7 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
 
-    <img src="./imagens/logoPHP.png" alt="Bootstrap" width="90" height="48">
+    <img src="./imagens/logo5.png" alt="Bootstrap" width="90" height="48">
     </a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,7 +31,11 @@
         </a>
         </li>
 
-      
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./usuarios.php">
+            Usuários
+        </a>
+        </li>
 
       </ul>
       
