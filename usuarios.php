@@ -33,6 +33,17 @@ $resultado = mysqli_query($conexao,$query);
     </div>
 </div>
 
+<?php 
+if(isset($_GET["sucesso"]) && !empty($_GET["sucesso"]))
+{
+    ?>
+    <div class="alert alert-success">
+        <?php echo $_GET["sucesso"];?>
+</div>
+<?php
+}
+?>
+
 <table class="table">
     <thead>
         <tr>
@@ -70,10 +81,10 @@ $resultado = mysqli_query($conexao,$query);
 
                     </td>
                     <td>
-                        <a href="./usuariosedit.php" class = "btn btn-warning" >
+                        <a href="./usuariosedit.php? id=<?php echo $linha["id"];?>" class = "btn btn-warning" >
                         Editar
                         </a>
-                        <a href="./usuariosdelete.php" class = "btn btn-danger" >
+                        <a href="./usuariosdelete.php? id=<?php echo $linha["id"];?>" class = "btn btn-danger" >
                         Excluir
                         </a>
                     </td> 

@@ -2,6 +2,7 @@
 $titulos = "Novo Usuarios";
 include "./cabecalho.php";
 
+
 if (isset ($_POST)&& !empty($_POST))
 {
     // echo "<pre>";
